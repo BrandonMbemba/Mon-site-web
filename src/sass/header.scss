@@ -1,0 +1,47 @@
+.header {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    gap: 32%;
+    align-items: baseline;
+    padding-left: 50px;
+    padding-right: 50px;
+    h1 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    nav {
+        display: flex;
+        margin-top: 2%;
+    ul{
+        display: flex;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+            color: black;
+            &.underline{
+                text-decoration: underline;
+            }
+        }
+        li {
+            margin: 0 10px;
+            list-style: none;
+        }
+    }
+}}
+
+@media (max-width :767.98px) {
+    .header {
+        gap: 0;
+        width: 90vw;
+        img {
+            margin-top: 0px;
+            height: 6vh;
+        }
+        li {
+            font-size: 11px;
+        }
+    }
+}
