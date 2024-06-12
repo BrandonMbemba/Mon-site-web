@@ -4,15 +4,15 @@
     padding: 3px;
     height: 32vh;
         img {
-            height: 43vh;
-            width: 44vw;
+            height: 45vh;
+            width: 37vw;
             border-radius: 2%;
-            object-fit: cover;
+            object-fit: scale-down;
         }
         h2 {
             font-family: "Montserrat", sans-serif;
             font-size: 15px;
-            color: white;
+            color: black;
             text-decoration: none;
             position: relative;
             bottom: 64px;

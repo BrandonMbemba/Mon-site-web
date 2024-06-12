@@ -19,6 +19,27 @@
             padding-left: 50px;
         }
     }
+    .work {
+        margin-top: 94px;
+        display: flex;
+        flex-direction: column;
+        height: 34vh;
+        justify-content: center;
+        h2 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 36px;
+            color: black;
+            font-weight: 500;
+            padding-left: 50px;
+        }
+        p {
+            font-family: "Montserrat", sans-serif;
+            font-size: 20px;
+            color: black;
+            font-weight: 300;
+            padding-left: 50px;
+        }
+    }
     .gallery {
         border-radius: 25px;
         display: grid;
@@ -26,24 +47,26 @@
         justify-content: center;
         width: 70vw;
         gap: 108px;
-        margin-top: 20px;
-        padding: 50px;
 
 }}
 
 @media (max-width: 767.98px) {
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .home {
         margin-top: 15px;
         .banner {
-            width: 85vw;
-            height: 15vh;
+            height: 31vh;
             h1 {
-                left: 5%;
-                top: 13%;
-                font-size: 26px;
+                width: 100%;
+                font-size: 20px;
+                padding: 0;
             }
             img {
                 border-radius: 15px;
+                margin-top: 20px;
             }
         }
         .gallery {
@@ -51,6 +74,35 @@
             display: flex;
             flex-direction: column;
             width: 58vw;
+        }
+        .work {
+            margin-top: 40px;
+            h2 {
+                font-size: 20px;
+                padding: 0;
+            }
+            p {
+                font-size: 14px;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 767.98px) and (max-width: 1024px) {
+    .home {
+        .banner {
+            h1 {
+                font-size: 40px;
+            }
+        }
+        .work {
+            h2 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 18px;
+            }
         }
     }
 }
