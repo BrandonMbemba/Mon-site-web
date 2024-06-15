@@ -3,11 +3,12 @@
     margin-top: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
     .banner {
         width: 100%;
         img {
             width: 100%;
-            height: 75%;
+            height: 75vh;
             object-fit: cover;
         }
         h1 {
@@ -45,10 +46,54 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-        width: 70vw;
-        gap: 108px;
+        gap: 60px;
+        padding-left: 50px;
+    }
+    .contact {
+        display: flex;
+        padding-left: 50px;
+        align-items: center;
+        margin-top: 5%;
+        h2 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 36px;
+            color: black;
+            font-weight: 500;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            div {
+                margin-bottom: 15px;
+                font-family: "Montserrat", sans-serif;
+                input {
+                    width: 100%;
+                    display: flex;
+                }
+                textarea {
+                    width: 100%;
+                    display: flex;
+                    height: 150px;
+                }
+            }
+            button {
+                width: 100%;
+                padding: 10px;
+                background-color: black;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                font-family: "Montserrat", sans-serif;
+            }
+            button:hover {
+                background-color: gray;
+            }
+        }
 
-}}
+    }
+}
 
 @media (max-width: 767.98px) {
     .header {
@@ -58,7 +103,6 @@
     .home {
         margin-top: 15px;
         .banner {
-            height: 31vh;
             h1 {
                 width: 100%;
                 font-size: 20px;
@@ -67,13 +111,16 @@
             img {
                 border-radius: 15px;
                 margin-top: 20px;
+                height: 31vh;
             }
         }
         .gallery {
             max-width: 767.98px;
             display: flex;
             flex-direction: column;
-            width: 58vw;
+            align-items: center;
+            gap: 70px;  
+            padding-left: 0;
         }
         .work {
             margin-top: 40px;
@@ -86,6 +133,14 @@
                 padding: 0;
             }
         }
+        .contact {
+            margin-top: 5%;
+            padding-left: 0;
+            justify-content: center;
+            form {
+                width: 260px;
+            }
+        }
     }
 }
 
@@ -94,6 +149,9 @@
         .banner {
             h1 {
                 font-size: 40px;
+            }
+            img {
+                height: 50vh;
             }
         }
         .work {

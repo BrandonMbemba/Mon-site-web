@@ -2,31 +2,26 @@
 	{
 		"id": "c67ab8a7",
 		"title": "Argent Bank",
-		"cover": "https://imagizer.imageshack.com/img923/5937/gGGQaZ.png",
+		"cover": "https://imagizer.imageshack.com/img924/6606/LK4gMF.jpg",
 		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+			"https://imagizer.imageshack.com/img924/6606/LK4gMF.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg"
 		],
-		"description": "Votre maison loin de chez vous. Que vous veniez de l'autre bout du monde, ou juste de quelques stations de RER, vous vous sentirez chez vous dans notre appartement.",
-		"host": {
-			"name": "Sophie Bluel",
-			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
-		},
-		"rating": "5",
-		"location": "Ile de France - Paris 17e",
+		"site" :"https://github.com/BrandonMbemba/Projet11--ArgentBank-website-main",
+		"description": "Dans ce projet, j'ai travaillé sur le développement front-end d'une application bancaire en utilisant React et Redux pour créer une expérience utilisateur dynamique et réactive.La mission principale est d'intégrer le front-end avec le back-end via des appels API.J'ai ensuite ecris des appels à l'API REST pour connecter les deux parties de l'application, assurant une communication fluide entre le client et le serveur.",
 		"equipments": [
-			"Équipements de base",
-			"Micro-Ondes",
-			"Douche italienne",
-			"Frigo",
-			"WIFI"
-		],
-		"tags": [
-			"Batignolle",
-			"Montmartre"
+			"React",
+			"Redux",
+			"API REST",
+			"JavaScript",
+			"HTML",
+			"CSS",
+			"Sass",
+			"MongoDB",
+			"Swagger"
+
 		]
 	},
 	{
@@ -34,92 +29,59 @@
 		"title": "Nina Carducci",
 		"cover": "https://imagizer.imageshack.com/img924/5259/ZSeR03.png",
 		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg",
+			"https://imagizer.imageshack.com/img924/5259/ZSeR03.png",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-2.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-3.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-4.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-5.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-6.jpg"
 		],
-		"description": "Optimisez le référencement d'un site de photographe. Améliorez le SEO du site de Nina Carducci, photographe professionnelle.",
-		"host": {
-			"name": "Della Case",
-			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
-		},
-		"rating": "4",
-		"location": "Ile de France - Paris 10e",
+		"description": " Ici j'ai optimisé le référencement d’un site, en améliorant sa performance et son accessibilité. - Identification des problèmes de chargement et de référencement. Ensuite recommandations pour améliorer la vitesse de chargement, la structure du code, et le référencement. Et enfin l'applications des améliorations. ",
+		"site" :"https://github.com/BrandonMbemba/Projet-9--NinaCarducci",
 		"equipments": [
-			"Parking",
-			"Sèche Cheveux",
-			"Machine à laver",
-			"Wi-fi",
-			"Cuisine équipée",
-			"Télévision"
-		],
-		"tags": [
-			"Canal Saint Martin",
-			"République",
-			"Appartement"
+			"LightHouse",
+			"Wave",
+			"Boostrap",
+			"HTML"
 		]
 	},
 	{
 		"id": "46d188c5",
 		"title": "ohmyfood",
-		"cover": "https://imagizer.imageshack.com/img922/7979/okUP6S.png",
+		"cover": "https://imagizer.imageshack.com/img922/5154/NDiJmf.jpg",
 		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-1.jpg",
+			"https://imagizer.imageshack.com/img922/5154/NDiJmf.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-2.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-3.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-4.jpg"
 		],
-		"description": "À seulement deux pas des Buttes Chaumont, venez découvrir Paris dans ce studio tout équipé. Entièrement équipé pour votre confort et élégamment décoré, il vous permettra de vivre comme un Parisien le temps de votre séjour.",
-		"host": {
-			"name": "Franck Maher",
-			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-2.jpg"
-		},
-		"rating": "3",
-		"location": "Ile de France - Paris 20e",
+		"description": "Ce projet m'a amené à travailler sur l'interface mobile-first du site d’une start-up. J'ai disposé des maquettes pour mobile et desktop, du prototype sur Figma, ainsi que des images et textes nécessaires. Mise en oeuvre d'animations CSS pour enrichir l'expérience utilisateur du site. Ces animations donneront vie à l'interface et rendront la navigation plus interactive et engageante.",
+		"site" :"https://github.com/BrandonMbemba/Projet4--Ohmyfood",
 		"equipments": [
-			"Wi-fi",
-			"Cuisine équipée",
-			"Télévision",
-			"Sèche Cheveux"
-		],
-		"tags": [
-			"Buttes Chaumont",
-			"Laumière",
-			"Studio"
+			"HTML",
+			"CSS",
+			"Sass",
+			"Figma"
 		]
 	},
 	{
 		"id": "7af00cd6",
 		"title": "Sophie Bluel",
-		"cover": "https://imagizer.imageshack.com/img924/5089/XYOwdM.png",
+		"cover": "https://imagizer.imageshack.com/img924/91/jgz8b3.png",
 		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
+			"https://imagizer.imageshack.com/img924/91/jgz8b3.png",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-2.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-3.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-4.jpg"
 		],
-		"description": "Venez découvrir Paris en séjournant dans ce nid douillet au coeur du 11ème. La vue sur le parc résidentiel saura vous reposer de vos longues journées de tourisme dans la capitale française. Et pour les plus fêtards d'entre vous, la rue Jean Pierre Timbaud vous permettra de découvrir la night-life parisienne à seulement 5 minutes de l'appartement.",
-		"host": {
-			"name": "Della Case",
-			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
-		},
-		"rating": "3",
-		"location": "Ile de France - Paris 11e",
+		"description": "J'ai travaillé sur la partie Front-End du site, où j'ai developpé la page de présentation des travaux de l'architecte à partir du HTML fourni. Cela impliqué la gestion des événements utilisateurs et la manipulation des éléments du DOM avec JavaScript. J'ai crée également une page de connexion pour l'administrateur du site ainsi qu'une modale permettant d'uploader de nouveaux médias. Ces éléments ont été développés from scratch.",
+		"site" :"https://github.com/BrandonMbemba/Projet-6--SophieBluel",
 		"equipments": [
-			"Micro-Ondes",
-			"Wi-fi",
-			"Chambre Séparée",
-			"Climatisation",
-			"Télévision"
-		],
-		"tags": [
-			"Parmentier",
-			"Marais",
-			"Parc",
-			"Night Life"
+			"JavaScript",
+			"API REST",
+			"HTML",
+			"CSS",
+			"Sass"
 		]
 	}
 ]

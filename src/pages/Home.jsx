@@ -1,7 +1,8 @@
 import React from 'react';
 import Thumb from '../components/Thumb';
 import logements from '../data/logements.json';
-import ImageBanner from '../assets/Integrateur-Web.jpg';
+import ImageBanner from '../assets/night-city-city-5120x2880-9753.jpg';
+import ContactForm from '../components/ContactForm';
 
 const Home = () => {
     return (
@@ -18,6 +19,9 @@ const Home = () => {
                 {logements.map((logement) => (
                     <Thumb key={logement.id} logement={logement} />
                 ))}
+            </div>
+            <div className='contact'>
+                <ContactForm />
             </div>
         </div>
     );

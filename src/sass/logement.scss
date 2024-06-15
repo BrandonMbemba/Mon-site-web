@@ -4,7 +4,7 @@
     img {
         height: 60vh;
         width: 78vw;
-        object-fit: cover;
+        object-fit: contain;
         display: flex;
         align-self: center;
     }
@@ -17,12 +17,16 @@
             margin-left: 10%;
             h1 { 
                 font-size: 30px;
-                color: #FF6060;
+                color: black;
                 font-weight: 500;
             }
             p {
                 color: black;
                 font-weight: 500;
+            }
+            a {
+                color: black;
+                text-decoration: underline;
             }
         }
         .info {

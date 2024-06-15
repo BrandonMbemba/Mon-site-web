@@ -15,29 +15,11 @@ const Logement = () => {
         return <Navigate to="/Error404" />;}
     return  (
         <div className='logement'>
-            {logement.pictures.length === 1 ? (
-                <img src={logement.pictures[0]} alt="Logement" />
-            ) : (
-                <Carousel images={logement.pictures} />
-            )}
+                <img src={logement.pictures[0]} alt="Logement"/>
             <div className='locationAndInfo'>
                 <div className='location'>
                     <h1>{logement.title}</h1>
-                    <p>{logement.location}</p>
-                </div>
-                <div className='info'>
-                    <p>{logement.host.name}</p>
-                    <img src={logement.host.picture} alt={logement.host.name} />
-                </div>
-            </div>
-            <div className='tagsAndRatings'>
-                <div className='tags'>
-                    {logement.tags.map((tag, index) => (
-                    <p key={index}>{tag}</p>
-                    ))}
-                </div>
-                <div className='ratings'>
-                    <Ratings nbStars = {logement.rating} />
+                    <a href={logement.site}>Voir le projet</a>
                 </div>
             </div>
             <div className='accordion'>
@@ -45,7 +27,7 @@ const Logement = () => {
                     <Accordion title= 'Description' content={logement.description} />
                 </div>
                 <div className='equipements'>
-                    <Accordion title = 'Equipements' content = {logement.equipments.map((equipment, index) => (<p key={index}>{equipment}</p>))} />
+                    <Accordion title = 'Compétences utilisées' content = {logement.equipments.map((equipment, index) => (<p key={index}>{equipment}</p>))} />
                 </div>  
             </div>
         </div>
