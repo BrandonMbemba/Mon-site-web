@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageAbout from '../assets/Integrateur-Web.jpg';
+import ImageAbout from '../../public/Integrateur-Web.jpg';
 import Accordion from '../components/Accordion';
 
 const About = () => {
