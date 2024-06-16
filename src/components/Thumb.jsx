@@ -2,19 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const Thumb = ({ logement }) => {
+const Thumb = ({ projet }) => {
     return (
-        <Link to={`/logement/${logement.id}`} className='thumbs'>
+        <Link to={`/projet/${projet.id}`} className='thumbs'>
             <div className='thumbs'>
-                <img src={logement.cover} alt={logement.title} />
-                <h2>{logement.title}</h2>
+                <img src={projet.cover} alt={projet.title} />
+                <h2>{projet.title}</h2>
             </div>
         </Link>
     );
 };
 
 Thumb.propTypes = {
-    logement: PropTypes.object.isRequired
+    projet: PropTypes.object.isRequired
 };
 
 export default Thumb;

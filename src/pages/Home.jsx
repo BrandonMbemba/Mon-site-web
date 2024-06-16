@@ -1,6 +1,6 @@
 import React from 'react';
 import Thumb from '../components/Thumb';
-import logements from '../data/logements.json';
+import projets from '../data/projets.json';
 import ImageBanner from '../../public/night-city-city-5120x2880-9753.jpg';
 import ContactForm from '../components/ContactForm';
 
@@ -16,8 +16,8 @@ const Home = () => {
                 <p>Je suis passionné par le développement web et je suis toujours à la recherche de nouveaux projets à réaliser. Je suis spécialisé dans l'intégration web et je suis capable de réaliser des projets de qualité. Je suis également capable de travailler en équipe et de m'adapter à toutes les situations. Je suis disponible pour travailler sur des projets de toutes tailles et je suis toujours prêt à relever de nouveaux défis. N'hésitez pas à me contacter pour discuter de vos projets et de vos besoins.</p>
             </div>
             <div className="gallery">
-                {logements.map((logement) => (
-                    <Thumb key={logement.id} logement={logement} />
+                {projets.map((projet) => (
+                    <Thumb key={projet.id} projet={projet} />
                 ))}
             </div>
             <div className='contact'>
