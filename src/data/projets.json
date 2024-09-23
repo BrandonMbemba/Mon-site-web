@@ -3,6 +3,7 @@
 		"id": "c67ab8a7",
 		"title": "Argent Bank",
 		"cover": "https://imagizer.imageshack.com/img924/6606/LK4gMF.jpg",
+		"alt": "Image illustrant le projet d'appli bancaire 'ArgentBank'",
 		"pictures": [
 			"https://imagizer.imageshack.com/img924/6606/LK4gMF.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
@@ -28,6 +29,7 @@
 		"id": "b9123946",
 		"title": "Nina Carducci",
 		"cover": "https://imagizer.imageshack.com/img924/5259/ZSeR03.png",
+		"alt": "Image de Nina Carducci pour son portfolio",
 		"pictures": [
 			"https://imagizer.imageshack.com/img924/5259/ZSeR03.png",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-2.jpg",
@@ -49,6 +51,7 @@
 		"id": "46d188c5",
 		"title": "ohmyfood",
 		"cover": "https://imagizer.imageshack.com/img922/5154/NDiJmf.jpg",
+		"alt": "Image d'un plat du restaurant ohmyfood",
 		"pictures": [
 			"https://imagizer.imageshack.com/img922/5154/NDiJmf.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-2.jpg",
@@ -68,6 +71,7 @@
 		"id": "7af00cd6",
 		"title": "Sophie Bluel",
 		"cover": "https://imagizer.imageshack.com/img924/91/jgz8b3.png",
+		"alt": "Photo prise par Sophie Bluel présente sur son portfolio",
 		"pictures": [
 			"https://imagizer.imageshack.com/img924/91/jgz8b3.png",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-2.jpg",

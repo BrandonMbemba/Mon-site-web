@@ -13,7 +13,7 @@
         }
         h1 {
             font-family: "Montserrat", sans-serif;
-            font-size: 58px;
+            font-size: 50px;
             color: black;
             font-weight: 500;
             width: 50vw;
@@ -54,13 +54,21 @@
         padding-left: 50px;
         align-items: center;
         margin-top: 5%;
-        background-color: black;
+        background-color: darkslategray;
         padding-bottom: 5%;
+        gap: 25%;
         h2 {
             font-family: "Montserrat", sans-serif;
             font-size: 36px;
             color: white;
             font-weight: 500;
+        }
+        p {
+            color: white;
+            font-family: "Montserrat", sans-serif;
+        }
+        img {
+            height: 7vh;
         }
         form {
             display: flex;
@@ -79,6 +87,7 @@
                     display: flex;
                     height: 150px;
                 }
+
             }
             button {
                 width: 100%;
@@ -110,6 +119,8 @@
                 width: 100%;
                 font-size: 20px;
                 padding: 0;
+                display: flex;
+                justify-content: center;
             }
             img {
                 margin-top: 20px;
@@ -129,6 +140,8 @@
             h2 {
                 font-size: 20px;
                 padding: 0;
+                display: flex;
+                justify-content: center;
             }
             p {
                 font-size: 14px;
@@ -140,9 +153,21 @@
             padding-left: 0;
             justify-content: center;
             padding-bottom: 10%;
-            form {
-                width: 260px;
-            }
+            gap: 10%;
+            flex-direction: column;
+                h2 {
+                    font-size: 20px;
+                    margin-left: 25%;
+                    max-width: 260px;
+                }
+                form {
+                    width: 260px;
+                }
+                img {
+                    height: 5vh;
+                    max-width: 260px;
+                    margin-top: 5%;
+                }
         }
     }
 }
@@ -151,7 +176,7 @@
     .home {
         .banner {
             h1 {
-                font-size: 40px;
+                font-size: 30px;
             }
             img {
                 height: 50vh;
@@ -163,6 +188,15 @@
             }
             p {
                 font-size: 18px;
+            }
+        }
+        .contact {
+            h2 {
+                font-size: 30px;
+            }
+            gap: 10%;
+            img {
+                height: 5vh;
             }
         }
     }

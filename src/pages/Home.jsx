@@ -2,6 +2,8 @@ import React from 'react';
 import Thumb from '../components/Thumb';
 import projets from '../data/projets.json';
 import ImageBanner from '../../public/night-city-city-5120x2880-9753.jpg';
+import Image2 from '../../public/BrandonMbemba_transparent-.png';
+import Image3 from '../../public/brandon-mbemba-high-resolution-logo-white-transparent.png';
 import ContactForm from '../components/ContactForm';
 
 const Home = () => {
@@ -9,7 +11,7 @@ const Home = () => {
         <div className='home'>
             <div className='banner'>
                 <h1>Intégrateur Web basé à Bry-Sur-Marne, en Françe.</h1>
-                <img src={ImageBanner} alt="Bry-Sur-Marne" />
+                <img src={ImageBanner} alt="Image représentant une ville étincelante" />
             </div>
             <div className='work'>
                 <h2>Travaux récents</h2>
@@ -22,6 +24,7 @@ const Home = () => {
             </div>
             <div className='contact'>
                 <ContactForm />
+                <img src={Image3} alt='Logo transparent Brandon Mbemba' />
             </div>
         </div>
     );

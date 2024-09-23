@@ -1,58 +1,58 @@
 import React, { useState } from 'react';
 
-const ContactForm = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+function ContactForm() {
+  const [result, setResult] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log({ name, email, message });
-    setSubmitted(true);
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Envoi....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "39c1378c-759e-4c26-b018-cfcae20efe18");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Message bien envoyé !");
+        event.target.reset();
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
+    } catch (error) {
+      console.error("Error", error);
+      setResult("An error occurred while submitting the form.");
+    }
   };
 
   return (
     <div>
       <h2>Une question ?</h2>
-      {submitted ? (
-        <p>Merci pour votre message ! Je vous contacterez bientôt.</p>
-      ) : (
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="name">Nom:</label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="message">Message:</label>
-            <textarea
-              id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            />
-          </div>
-          <button type="submit">Envoyer</button>
-        </form>
-      )}
+      <form onSubmit={onSubmit}>
+        <div>
+          <label htmlFor ="name">Nom:</label>
+          <input type="text" id='name' name="name" required />
+        </div>
+        <div>
+          <label htmlFor ="email">E-mail:</label>
+          <input type="email" id='email' name="email" required />
+        </div>
+        <div>
+        <label htmlFor ="message">Message:</label>
+        <textarea id='message' name="message" required></textarea>
+        </div>
+
+        <button type="submit">Envoyer</button>
+      </form>
+      <p>{result}</p>
     </div>
   );
-};
+}
 
 export default ContactForm;

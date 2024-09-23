@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import ImageBanner from "../../public/brandon-mbemba-high-resolution-logo-transparent.png";
 
 const Header = () => {
     return (
         <div className="header">
-            <h1>Brandon M'bemba</h1>
+            <img src= {ImageBanner} alt="Logo de Brandon M'bemba"/>
             <nav>
                 <ul>
                     <NavLink to="/" className={({isActive}) => (isActive ? "underline" : "")}>
