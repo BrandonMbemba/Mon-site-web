@@ -4,6 +4,6 @@ import process from 'process';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/Projet---12' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/Mon-site-web' : '/',
   plugins: [react()],
 })

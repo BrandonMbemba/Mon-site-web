@@ -8,7 +8,7 @@ import Footer from "./Footer";
 import Error404 from "../pages/Error404";
 
 const App = () => {
-  const basename = import.meta.env.MODE === 'production' ? '/Projet---12' : '';
+  const basename = import.meta.env.MODE === 'production' ? '/Mon-site-web' : '';
   return (
     <BrowserRouter basename= {basename}>
       <Header />
