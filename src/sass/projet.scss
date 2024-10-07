@@ -1,20 +1,26 @@
 .projet {
     display: flex;
     flex-direction: column;
+    width: 90vw;
+    padding-left: 50px;
+    padding-right: 50px;
     img {
         height: 60vh;
-        width: 78vw;
-        object-fit: contain;
+        width: 90vw;
+        object-fit: cover;
         display: flex;
         align-self: center;
+        margin-top: 8%;
     }
     .locationAndInfo {
         display: flex;
         justify-content: space-between;
         font-family: "Montserrat", sans-serif;
+        width: 90vw;
+        align-self: center;
         .location {
             max-width: 30vw;
-            margin-left: 10%;
+            margin-bottom: 2%;
             h1 { 
                 font-size: 30px;
                 color: black;
@@ -77,12 +83,16 @@
 
 @media (max-width :767.98px) {
     .projet {
-        margin-top: 5%;
+        margin-top: 20%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 2%;
         .locationAndInfo {
             flex-direction: column;
+            width: unset;
+            align-self: unset;
             .location {
                 max-width: unset;
-                margin-left: 3%;
             }
             .info {
                 position : relative;
@@ -106,6 +116,19 @@
             .ratings {
                 margin-top: 8%;
             }
+        }
+    }
+}
+
+@media (min-width: 767.98px) and (max-width: 1024px) {
+    .projet {
+        width: unset;
+        img {
+            width: 86vw;
+        }
+        .locationAndInfo {
+            align-self: unset;
+            width: unset;
         }
     }
 }

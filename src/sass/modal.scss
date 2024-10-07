@@ -1,0 +1,107 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligner le contenu en haut */
+    padding-top: 0; /* Plus d'espace, modale collée en haut */
+    font-size: 40px;
+    z-index: 1000; /* Pour être sûr qu'elle soit au-dessus de tout */
+    transition: transform 600ms cubic-bezier(.4,0,.2,1);
+}
+
+.modal-content {
+    background: white;
+    border-radius: 0; /* Enlever le border-radius pour que la modale remplisse toute la page */
+    text-align: center;
+    position: relative;
+    width: 100%; /* Prendre toute la largeur */
+    height: 100vh; /* Prendre toute la hauteur */
+    display: flex;
+    flex-direction: column; /* Structurer les éléments de haut en bas */
+    justify-content: flex-start; /* Aligner le contenu en haut */
+    overflow: hidden; /* Désactiver le défilement pour le contenu de la modale */
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        list-style-type: none;
+        gap: 30px;
+        margin-top: 30%;
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 2%;
+    margin-top: 4%;
+    box-sizing: border-box; /* Assurer que le padding soit bien pris en compte dans les dimensions */
+}
+
+.modal-logo {
+    object-fit: cover;
+    height: 4vh;
+}
+
+.close-icon {
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-left: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transition pour la transformation et l'opacité */
+}
+
+/* Ajout d'un hover pour animer l'icône de fermeture */
+.close-icon:hover {
+    transform: rotate(90deg); /* Rotation douce sur hover */
+    opacity: 0.7; /* Légère réduction de l'opacité pour effet visuel */
+}
+
+
+.mobile-menu-icon {
+    display: flex;
+    cursor: pointer;
+    font-size: 25px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transition pour la transformation et l'opacité */
+}
+
+/* Ajout d'un hover pour animer l'icône du menu hamburger */
+.mobile-menu-icon:hover {
+    transform: rotate(90deg); /* Rotation douce sur hover */
+    opacity: 0.7; /* Légère réduction de l'opacité pour effet visuel */
+}
+
+a {
+    text-decoration: none;
+            color: black;
+            &.underline{
+                text-decoration: underline;
+            }
+}
+
+.desktop-nav {
+    display: none;
+}
+
+/* Désactiver le défilement du body */
+.no-scroll {
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .desktop-nav {
+        display: block;
+    }
+
+    .mobile-menu-icon {
+        display: none;
+    }
+}

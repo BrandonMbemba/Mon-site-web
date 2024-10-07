@@ -10,25 +10,25 @@ const Footer = () => {
                     href='https://www.linkedin.com/in/brandon-m-40394925a/' 
                     target='_blank' 
                     rel='noopener noreferrer'
+                    aria-label="LinkedIn - Brandon M'Bemba"
                 >
                     <FaLinkedin/>
-                    <p>Mon Linkedin</p>
                 </a>
                 <a
-                    href='../../public/BrandonMbemba(Integrateur).pdf'
+                    href='https://acrobat.adobe.com/id/urn:aaid:sc:EU:cf8ab6f1-add9-483b-a1cb-a9deafde82dc'
                     target='_blank' 
                     rel='noopener noreferrer'
+                    aria-label="CV - Brandon M'Bemba"
                 >
                     <FaFileContract/>
-                    <p>Mon CV</p>
                 </a>
                 <a
                     href='https://github.com/BrandonMbemba'
                     target='_blank' 
                     rel='noopener noreferrer'
+                    aria-label="GitHub - Brandon M'Bemba"
                 >
                     <FaGithub/>
-                    <p>Mon Github</p>
                 </a>
                 <p>© 2024 Brandon M'bemba. Tous droits réservés</p>
         </div>

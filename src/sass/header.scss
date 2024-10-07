@@ -4,13 +4,14 @@
     justify-content: space-between;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    gap: 32%;
+    gap: 25%;
     padding-left: 50px;
     padding-right: 50px;
     img {
         object-fit: cover;
         display: flex;
         align-self: flex-end;
+        height: 5vh;
     }
     h1 {
         font-size: 20px;
@@ -40,20 +41,27 @@
     .header {
         gap: 0;
         width: 90vw;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 2%;
+        margin-top: 4%;
         img {
-            margin-top: 14px;
-            height: 3vh;
+            height: 4vh;
             align-self: center;
         }
+        nav {
+            display: none;
         li {
             font-size: 9px;
         }
     }
+    }
 }
 @media (min-width: 767.98px) and (max-width: 1024px) {
     .header {
+        gap: 5%;
         li {
-            font-size: 10px;
+            font-size: 13px;
         }
         img {
             height: 5vh;

@@ -1,24 +1,47 @@
 .about {
-    justify-content: center;
     display: flex;
-    margin-top: 20px;
+    padding-left: 50px;
+    margin-top: 8%;
+    padding-bottom: 5%;
+    padding-right: 50px;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    height: 75vh;
+    .about_title {
+        width: 50%;
+        gap: 5%;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 43px;
+            color: black;
+            font-weight: 600;
+        }
+    }    
     .banner {
-        width: 77vw;
-        height: 25vh;
-        position: relative;
-        margin-bottom: 1%;
+        width: 50%;
+        display: flex;
+        justify-content: right;
+        flex-direction: column;
         img {
             width: 100%;
-            height: 100%;
+            height: 44%;
             object-fit: cover;
-            border-radius: 25px;
         }
     }
+    .quote {
+        font-family: 'Montserrat', sans-serif;
+        width: 70%;
+        font-size: 19px;
+        font-weight: 500;
+        margin: 30px 0;
+        .earl {
+            font-weight: 600;
+            font-style: italic;
+        }
+        }
     .about_container {
-        width: 59vw;
+        width: 30vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -28,8 +51,9 @@
             flex-wrap: wrap;
             flex-direction: column;
             align-items: center;
+            padding: 10px 0;
             button {
-                background-color: lightgray;
+                background-color: black;
                 color: white;
                 font-size: 20px;
                 font-weight: 600;
@@ -40,7 +64,7 @@
                 margin-bottom: 10px;
                 cursor: pointer;
                 text-align: left;
-                width: 60vw;
+                width: 30vw;
                 height: 6vh;
                 display: flex;
                 justify-content: space-between;
@@ -51,25 +75,91 @@
 
 @media (max-width: 767.98px) {
     .about {
-        margin-top: 15px;
-        .banner {
-            width: 91vw;
-            height: 18vh;
-            margin-bottom: 3%;
-            img {
-                border-radius: 15px;
+        margin-top: 20%;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 2%;
+        flex-wrap: nowrap;
+        padding-bottom: 1%;
+        .about_title {
+            width: 100%;
+            h1 {
+            font-size: 30px;
             }
-        }
-        .about_container {
-            width: 90vw;
-            div {
-                button {
+            .about_container {
+                width: 90vw;
+                margin-bottom: 2%;
+                div {
+                    padding: 0;
+                    button {
+                        width: 90vw;
+                        font-size: 15px;
+                        height: 5vh;
+                    }
+                }
+                .grey {
                     width: 90vw;
+                    font-size: 14px;
                 }
             }
-            .grey {
-                width: 90vw;
+        }
+        .banner {
+            width: 54vw;
+            height: 41vh;
+            margin-bottom: 3%;
+            align-self: center;
+            img {
+                height: 80%;
             }
+            .quote {
+                font-size: 14px;
+                width: 94%;
+                margin: 0;
+            }
+        }        
+    }
+    .contactus {
+        padding-top: 10%;
+        height: 75vh;
+        h2 {
+            font-size: 28px;
+            width: 75%;
+        }
+        p{
+            font-size: 17px;
+            width: 75%;
+        }
+        a {
+            width: 45%;
+            height: 14%;
+            margin-top: 1%;
+            margin-bottom: 13%;
+            button {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (min-width: 767.98px) and (max-width: 1024px) {
+    .about {
+        height: 70vh;
+        .about_title {
+            gap: 0%;
+            h1 {
+                font-size: 31px;
+            }
+            .about_container {
+                .grey {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .contactus {
+        h2 {
+            font-size: 31px;
         }
     }
 }

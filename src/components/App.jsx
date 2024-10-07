@@ -6,9 +6,10 @@ import About from "../pages/About";
 import Projet from "../pages/Projet";
 import Footer from "./Footer";
 import Error404 from "../pages/Error404";
+import Contact from "../pages/Contact";
 
 const App = () => {
-  const basename = import.meta.env.MODE === 'production' ? '/Mon-site-web' : '';
+  const basename = import.meta.env.MODE === 'production' ? '/bmwebdev' : '';
   return (
     <BrowserRouter basename= {basename}>
       <Header />
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/projet/:id" element={<Projet />} />
         <Route path="*" element={<Error404 />} />
         <Route path="/Error404" element={<Error404 />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>

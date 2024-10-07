@@ -1,30 +1,32 @@
 import React from 'react';
 import Thumb from '../components/Thumb';
 import projets from '../data/projets.json';
-import ImageBanner from '../../public/night-city-city-5120x2880-9753.jpg';
-import Image2 from '../../public/BrandonMbemba_transparent-.png';
-import Image3 from '../../public/brandon-mbemba-high-resolution-logo-white-transparent.png';
-import ContactForm from '../components/ContactForm';
+import ImageBanner from '../../public/IMG_0973.webp';
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
     return (
         <div className='home'>
             <div className='banner'>
-                <h1>Intégrateur Web basé à Bry-Sur-Marne, en Françe.</h1>
+                <h1>Développeur Intégrateur Web basé à Bry-Sur-Marne, en Françe.</h1>
                 <img src={ImageBanner} alt="Image représentant une ville étincelante" />
             </div>
             <div className='work'>
                 <h2>Travaux récents</h2>
-                <p>Je suis passionné par le développement web et je suis toujours à la recherche de nouveaux projets à réaliser. Je suis spécialisé dans l'intégration web et je suis capable de réaliser des projets de qualité. Je suis également capable de travailler en équipe et de m'adapter à toutes les situations. Je suis disponible pour travailler sur des projets de toutes tailles et je suis toujours prêt à relever de nouveaux défis. N'hésitez pas à me contacter pour discuter de vos projets et de vos besoins.</p>
+                <p>Mes récents projets démontrent ma maîtrise des technologies web, notamment avec React, JavaScript, HTML et CSS. J'ai travaillé sur la création d'interfaces dynamiques, l'intégration d'API, et l'optimisation des performances des sites. Chaque projet m'a permis de relever des défis uniques en matière de développement, tout en garantissant une expérience utilisateur fluide et moderne. <br/>Vous retrouverez l'ensemble de mes projets sur ma page Github</p>
             </div>
             <div className="gallery">
                 {projets.map((projet) => (
                     <Thumb key={projet.id} projet={projet} />
                 ))}
             </div>
-            <div className='contact'>
-                <ContactForm />
-                <img src={Image3} alt='Logo transparent Brandon Mbemba' />
+            <div className='contactus'>
+                <h2>Collaborons ensemble</h2>
+                <p>Vous envisagez de lancer une entreprise ? Vous souhaitez transformer un passe-temps en quelque chose de plus grand ? Ou peut-être avez-vous un projet créatif à partager avec le monde.
+                Quelle que soit votre ambition, la manière dont vous racontez votre histoire en ligne peut tout changer.</p>                
+                <NavLink to="/Contact">
+                    <button>Contactez moi</button>
+                </NavLink>
             </div>
         </div>
     );

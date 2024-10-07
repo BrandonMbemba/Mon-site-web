@@ -1,6 +1,5 @@
 .footer {
-    background-color: black;
-    color: white;
+    color: black;
     height: 290px;
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
@@ -8,30 +7,41 @@
     flex-direction: column;
     padding-left: 50px;
     justify-content: center;
-    margin-top: 50px;
-    h1 {
-        font-weight: 500;
-    }
-}    img {
-        height: 5vh;
-    }
-    a {
-        color: white;
-        font-size: 20px;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
+    gap: 5%;
+        h1 {
+            font-weight: 500;
+        }
+        img {
+            height: 5vh;
+        }
+        a {
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            width: 2%;
+        }
+
+        p {
+            width: 40%;
+        }
     }
     @media (max-width: 767.98px) {
         .footer {
             font-size: 20px;
             padding-left: 0;
-            align-items: center;
-            
+            margin-left: 2%;
+            a {
+                width: 4%;
+            }            
         }
     }
     @media (min-width: 767.98px) and (max-width: 1024px) {
         .footer {
             font-size: 15px;
+            p {
+                width: 49%;
+            }
         }
     }

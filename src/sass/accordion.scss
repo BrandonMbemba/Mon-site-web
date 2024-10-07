@@ -2,12 +2,12 @@
     font-family: "Montserrat", sans-serif;
     display: flex;
     flex-wrap: wrap;
+    gap: 12%;
     .description {
-        margin-left: 10%;
         display: flex;
         width: 35vw;
         button {
-            background-color: gray;
+            background-color: black;
             color: white;
             font-size: 20px;
             font-weight: 500;
@@ -29,7 +29,7 @@
         display: flex;
         width: 35vw;
         button {
-            background-color: gray;
+            background-color: black;
             color: white;
             font-size: 20px;
             font-weight: 500;
@@ -60,7 +60,6 @@
     .accordion {
         flex-direction: column;
         .description {
-            margin-left: 3%;
             width: 80vw;
             button {
                 width: 90vw;
@@ -68,10 +67,19 @@
         }
         .equipements {
             width: 80vw;
-            margin-left: 3%;
+            margin-left: 0;
             button {
                 width: 90vw;
             }
+        }
+    }
+}
+
+@media (min-width: 767.98px) and (max-width: 1024px) {
+    .accordion {
+        gap: 18%;
+        .equipements {
+            margin-left: 0%;
         }
     }
 }

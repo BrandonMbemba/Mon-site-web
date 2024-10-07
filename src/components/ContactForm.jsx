@@ -33,19 +33,32 @@ function ContactForm() {
 
   return (
     <div>
-      <h2>Une question ?</h2>
       <form onSubmit={onSubmit}>
-        <div>
-          <label htmlFor ="name">Nom:</label>
-          <input type="text" id='name' name="name" required />
+        <div className="form-group">
+          <div>
+            <label htmlFor="first-name">Prénom:</label>
+            <input type="text" id="first-name" name="first_name" required />
+          </div>
+          <div>
+            <label htmlFor="name">Nom:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
         </div>
+        
         <div>
-          <label htmlFor ="email">E-mail:</label>
-          <input type="email" id='email' name="email" required />
+          <div>
+            <label htmlFor="subject">Objet:</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div>
+            <label htmlFor="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
         </div>
+
         <div>
-        <label htmlFor ="message">Message:</label>
-        <textarea id='message' name="message" required></textarea>
+          <label htmlFor="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
         </div>
 
         <button type="submit">Envoyer</button>
@@ -56,3 +69,4 @@ function ContactForm() {
 }
 
 export default ContactForm;
+
