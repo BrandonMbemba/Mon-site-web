@@ -15,7 +15,7 @@ const Footer = () => {
                     <FaLinkedin/>
                 </a>
                 <a
-                    href='https://acrobat.adobe.com/id/urn:aaid:sc:EU:cf8ab6f1-add9-483b-a1cb-a9deafde82dc'
+                    href='https://acrobat.adobe.com/id/urn:aaid:sc:EU:143094eb-d132-431a-90e3-9bd578b1ded8'
                     target='_blank' 
                     rel='noopener noreferrer'
                     aria-label="CV - Brandon M'Bemba"
