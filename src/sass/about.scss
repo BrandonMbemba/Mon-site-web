@@ -46,6 +46,7 @@
         flex-direction: column;
         align-items: center;
         div {
+            transition: all 0.3s ease-in-out;
             font-family: "Montserrat", sans-serif;
             display: flex;
             flex-wrap: wrap;
@@ -81,15 +82,19 @@
         padding-right: 0;
         margin-left: 2%;
         flex-wrap: nowrap;
-        padding-bottom: 1%;
+        padding-bottom: 20%;
+        min-height: auto;
+        height: auto;
         .about_title {
             width: 100%;
             h1 {
             font-size: 30px;
             }
             .about_container {
+                height: auto;
+                min-height: auto;
                 width: 90vw;
-                margin-bottom: 2%;
+                margin-bottom: 20px;
                 div {
                     padding: 0;
                     button {
@@ -121,7 +126,8 @@
     }
     .contactus {
         padding-top: 10%;
-        height: 75vh;
+        margin-top: 10%;
+        min-height: 75vh;
         h2 {
             font-size: 28px;
             width: 75%;
